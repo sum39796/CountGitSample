@@ -4,11 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class MainActivity extends Activity {
 	int count =0;
-	TextView TextView;
+	TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +18,7 @@ public class MainActivity extends Activity {
     }
     public void plus(){
     	count++;
-    	textView.setText(""+count)
+    	textView.setText(""+count);
     }
 
     @Override
