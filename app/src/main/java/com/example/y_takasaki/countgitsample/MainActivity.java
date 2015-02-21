@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class MainActivity extends Activity {
@@ -15,9 +16,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         textView=(TextView)findViewById(R.id.textView);
     }
-    public void plus(){
+    public void plus(View v){
     	count++;
-    	textView.setText(""+count)
+    	textView.setText(""+count);
     }
 
     @Override
