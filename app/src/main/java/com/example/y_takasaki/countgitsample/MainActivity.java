@@ -7,13 +7,16 @@ import android.view.MenuItem;
 
 
 public class MainActivity extends Activity {
-
+	int count =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
+    }
+    public void buttonClick(){
+    	count++;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
