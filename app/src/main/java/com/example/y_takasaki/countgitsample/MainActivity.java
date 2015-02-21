@@ -8,14 +8,16 @@ import android.view.MenuItem;
 
 public class MainActivity extends Activity {
 	int count =0;
+	TextView TextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        textView=(TextView)findViewById(R.id.textView);
     }
-    public void buttonClick(){
+    public void plus(){
     	count++;
+    	textView.setText(""+count)
     }
 
     @Override
